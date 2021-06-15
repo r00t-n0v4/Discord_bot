@@ -20,10 +20,10 @@ import scapy.all as scapy
 import re
 
 #wolframalpha key
-wolf_client = wolframalpha.Client("PV8224-QKRUGU5QWT")
+wolf_client = wolframalpha.Client("API KEY")
 
 #discord key
-Token = 'NjgwMDQzNTAzNzE5NDE1ODEw.Xk6xlg.rFz9zwdZVBUK6i5cVrF5tTLzykI'
+Token = 'API KEY'
 bot = commands.Bot(command_prefix=commands.when_mentioned_or("."),
                    description='Bagley AI assistant')
 # Suppress noise about console usage from errors
@@ -52,7 +52,7 @@ ytdl = youtube_dl.YoutubeDL(ytdl_format_options)
 
 #only runs certain commands if its me
 def is_it_me(ctx):
-    return ctx.author.id == 296029433280856065, 149035802016481280
+    return ctx.author.id == "discord.id"
 
 
 class YTDLSource(discord.PCMVolumeTransformer):
